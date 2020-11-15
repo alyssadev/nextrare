@@ -21,8 +21,6 @@ def index():
     t = time()
     n=t-epoch
     out = f"/way {wp[floor(n/1200)%20]} for {rares[floor(n/1200)%20]} {a(1200-floor(n%1200))}"
-    if rares[floor(n/1200)%20] != "Bronjahm":
-        out += f" (Bronjahm {a(abs(floor(n/1200)%20-9)*1200+(1200-floor(n%1200)))})"
     return out
 
 if __name__ == "__main__":

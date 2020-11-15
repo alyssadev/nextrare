@@ -13,6 +13,4 @@ def a(x):
     return human(timedelta(seconds=-x))
 
 n=t-epoch
-print(f"/way {wp[floor(n/1200)%20]} for {rares[floor(n/1200)%20]} {a(1200-floor(n%1200))}", end='')
-if rares[floor(n/1200)%20] != "Bronjahm":
-    print(f" (Bronjahm {a(abs(floor(n/1200)%20-9)*1200+(1200-floor(n%1200)))})")
+print(f"/way {wp[floor(n/1200)%20]} for {rares[floor(n/1200)%20]} {a(1200-floor(n%1200))}")
